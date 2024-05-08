@@ -1,0 +1,327 @@
+a1 <- ggplot(ta, aes(x=spi20011m,y=nshrub2001),
+             add = "reg.line", conf.int = TRUE, 
+             cor.coef = TRUE) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = - 0.6, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+
+  labs( y="NPP-2001") + 
+  theme(axis.text.y=element_text(size=7,face = "bold"))+
+  theme( axis.title.y = element_text(size=8))+
+scale_y_continuous(limits = c(0,40),
+                   breaks = scales::breaks_width(10))+
+  scale_x_continuous(limits = c(-0.6,0.6),
+                     breaks = scales::breaks_width(0.2))
+a1
+
+b1 <- ggplot(ta, aes(x=spi20013m,y=nshrub2001)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -0.6, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+labs(y = NULL)+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))+
+  scale_x_continuous(limits = c(-0.6,0.6),breaks = scales::breaks_width(0.2))
+
+b1
+
+c1 <- ggplot(ta, aes(x=spi20016m,y=nshrub2001)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -0.6, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+labs(y = NULL)+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))+
+  scale_x_continuous(limits = c(-0.6,0.6),breaks = scales::breaks_width(0.2))
+
+c1
+
+d1 <- ggplot(ta, aes(x=spi20019m,y=nshrub2001)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -0.6, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+labs(y = NULL)+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))+
+  scale_x_continuous(limits = c(-0.6,0.6),breaks = scales::breaks_width(0.2))
+
+d1
+
+f1 <- ggplot(ta, aes(x=spi200112m,y= nshrub2001)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -0.6, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+labs(y = NULL)+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))+
+  scale_x_continuous(limits = c(-0.6,0.6),breaks = scales::breaks_width(0.2))
+
+f1
+
+#Plot years 2009
+a9 <- ggplot(ta, aes(x=spi20091m,y=nshrub2009)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -0.6, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+
+  labs( y="NPP-2009") + 
+  theme( axis.title.y = element_text(size=8))+
+  theme(axis.text.y=element_text(size=7,face = "bold"))+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))+
+  scale_x_continuous(limits = c(-0.6,0.6),breaks = scales::breaks_width(0.2))
+
+  a9
+
+b9 <- ggplot(ta, aes(x=spi20093m,y=nshrub2009)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -0.6, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+labs(y = NULL)+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))+
+  scale_x_continuous(limits = c(-0.6,0.6),breaks = scales::breaks_width(0.2))
+
+b9
+
+c9 <- ggplot(ta, aes(x=spi20096m,y=nshrub2009)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -0.6, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+labs(y = NULL)+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))+
+  scale_x_continuous(limits = c(-0.6,0.6),breaks = scales::breaks_width(0.2))
+
+c9
+
+d9 <- ggplot(ta, aes(x=spi20099m,y=nshrub2009)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -0.6, label.y = 35,size=2.5)+
+  theme_bw()+ labs(x = NULL)+labs(y = NULL)+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))+
+  scale_x_continuous(limits = c(-0.6,0.6),breaks = scales::breaks_width(0.2))
+
+d9
+
+f9 <- ggplot(ta, aes(x=spi200912m,y=nshrub2009)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -0.6, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+labs(y = NULL)+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))+
+  scale_x_continuous(limits = c(-0.6,0.6),breaks = scales::breaks_width(0.2))
+
+f9
+
+
+#plot 2012 year 
+
+a12 <- ggplot(ta, aes(x=spi20121m,y=nshrub2012)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -0.6, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+labs(y="NPP-2012")+
+  theme( axis.title.y = element_text(size=8))+
+  theme(axis.text.y=element_text( size=7,face = "bold"))+
+  scale_x_continuous(limits = c(-0.6,0.6),breaks = scales::breaks_width(0.2))+
+scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))
+
+ 
+a12
+
+b12 <- ggplot(ta, aes(x=spi20123m,y=nshrub2012)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -0.6, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+labs(y = NULL)+
+  scale_x_continuous(limits = c(-0.6,0.6),breaks = scales::breaks_width(0.2))+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))
+b12
+
+c12 <- ggplot(ta, aes(x=spi20126m,y=nshrub2012)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -1.2, label.y = 35,size=2.5)+
+  theme_bw()+ labs(x = NULL)+labs(y = NULL)+
+scale_x_continuous(limits = c(-1.5,1.5),breaks = scales::breaks_width(0.5))+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))
+c12
+
+d12 <- ggplot(ta, aes(x=spi20129m,y=nshrub2012)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -1.4, label.y = 35,size=2.5)+
+  theme_bw()+ labs(x = NULL)+labs(y = NULL)+
+scale_x_continuous(limits = c(-1.5,1.5),breaks = scales::breaks_width(0.5))+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))
+d12
+
+f12 <- ggplot(ta, aes(x=spi201212m,y=nshrub2012)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -1.5, label.y = 35,size=2.5)+
+  theme_bw()+labs(x = NULL)+labs(y = NULL)+
+scale_x_continuous(limits = c(-1.5,1.5),breaks = scales::breaks_width(0.5))+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))
+
+f12 
+
+#plot 2015 year
+
+a15 <- ggplot(ta, aes(x=spi20151m,y=nshrub2015)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -1.5, label.y = 35,size=2.5)+
+  theme_bw()+
+  theme(axis.text.x=element_text(size=7,face = "bold"))+
+  theme(axis.text.y=element_text(size=7,face = "bold"))+
+  labs(x = "1_month SPI", y="NPP-2015") + 
+  theme( axis.title.y = element_text(size=8),
+         axis.title.x = element_text(size=8))+
+  scale_x_continuous(limits = c(-1.5,1.5),breaks = scales::breaks_width(0.5))+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))
+
+a15
+
+
+b15 <- ggplot(ta, aes(x=spi20153m,y=nshrub2015)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -1.5, label.y = 35,size=2.5)+
+  theme_bw()+
+  theme(axis.text.x=element_text(size=7,face = "bold"))+
+  labs(x = "3_month SPI") +
+  theme(axis.title.x = element_text(size=8))+
+  labs(y= NULL)+
+  scale_x_continuous(limits = c(-1.5,1.5),breaks = scales::breaks_width(0.5))+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))
+
+b15
+
+c15 <- ggplot(ta, aes(x=spi20156m,y=nshrub2015)) +
+  geom_point()+ geom_smooth(method="lm", col="blue",
+                            se=FALSE,formula =y~x)+
+  stat_cor(label.x = -1.5, label.y = 35,size=2.5)+
+  theme_bw()+
+  theme(axis.text.x=element_text(size=7,face = "bold"))+
+  labs(x = "6_month SPI")+
+  theme(axis.title.x = element_text(size=8))+
+  labs(y= NULL)+
+  scale_x_continuous(limits = c(-1.5,1.5),breaks = scales::breaks_width(0.5))+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))
+
+c15
+
+d15 <- ggplot(ta, aes(x=spi20159m,y=nshrub2015))+
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -1.5, label.y = 35,size=2.5)+
+  theme_bw()+
+  theme(axis.text.x=element_text(size=7,face = "bold"))+
+  theme(axis.text.y=element_text(size=7))+
+  labs(x = "9_month SPI")+
+  theme(axis.title.x = element_text(size=8))+
+  labs(y = NULL)+
+  scale_x_continuous(limits = c(-1.5,1.5),breaks = scales::breaks_width(0.5))+
+  scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))
+
+d15
+
+f15 <- ggplot(ta, aes(x=spi201512m,y=nshrub2015)) +
+  geom_point()+geom_smooth(method="lm", col="blue",
+                           se=FALSE,formula =y~x)+
+  stat_cor(label.x = -1.5, label.y = 35, size=2.5)+
+  theme_bw()+
+  theme(axis.text.x=element_text(size=7,face = "bold"))+
+  labs(x = "12_month SPI")+
+  theme(axis.title.x = element_text(size=8))+
+  labs(y = NULL)+
+scale_x_continuous(limits = c(-1.5,1.5),breaks = scales::breaks_width(0.5))+
+scale_y_continuous(limits = c(0,40),breaks = scales::breaks_width(10))
+
+f15 
+
+
+# combining multiple graph
+
+cowplot::plot_grid(a1+theme(axis.text.x = element_blank(),
+                            panel.grid = element_blank(),
+                            plot.margin = margin(l = 0.5)),
+                   b1 + theme(axis.text.y = element_blank(),
+                              axis.text.x = element_blank(),
+                              axis.title.y = element_blank(),
+                              panel.grid = element_blank(),
+                              plot.margin = margin(r = 0.5, l = 0.5)), 
+                   c1 + theme(axis.text.y = element_blank(),
+                              axis.text.x = element_blank(),
+                              axis.title.y = element_blank(),
+                              panel.grid = element_blank(),
+                              plot.margin = margin(r = 0.5, l = 0.5)),
+                   d1 + theme(axis.text.y = element_blank(),
+                              axis.text.x = element_blank(),
+                              axis.title.y = element_blank(),
+                              panel.grid = element_blank(),
+                              plot.margin = margin( l = 0.5)),
+                   f1 + theme(axis.text.y = element_blank(),
+                              axis.text.x = element_blank(),
+                              axis.title.y = element_blank(),
+                              panel.grid = element_blank(),
+                              plot.margin = margin(l = 0.5)),
+                   a9+theme(axis.text.x = element_blank(),
+                            panel.grid = element_blank(),
+                            plot.margin = margin(l = 0.5)),
+                   b9 + theme(axis.text.y = element_blank(),
+                              axis.text.x = element_blank(),
+                              axis.title.y = element_blank(),
+                              panel.grid = element_blank(),
+                              plot.margin = margin( l = 0.5)), 
+                   c9 + theme(axis.text.y = element_blank(),
+                              axis.text.x = element_blank(),
+                              axis.title.y = element_blank(),
+                              panel.grid = element_blank(),
+                              plot.margin = margin(l = 0.5)),
+                   d9 + theme(axis.text.y = element_blank(),
+                              axis.text.x = element_blank(),
+                              panel.grid = element_blank(),
+                              axis.title.y = element_blank(),
+                              plot.margin = margin(l = 0.5)),
+                   f9 + theme(axis.text.y = element_blank(),
+                              axis.text.x = element_blank(),
+                              axis.title.y = element_blank(),
+                              panel.grid = element_blank(),
+                              plot.margin = margin(l = 0.5)),
+                   a12+theme(axis.text.x = element_blank(),
+                             panel.grid = element_blank(),
+                             plot.margin = margin(r = 0.5, l = 0.5)),
+                   b12 + theme(axis.text.y = element_blank(),
+                               axis.text.x = element_blank(),
+                               panel.grid = element_blank(),
+                               axis.title.y = element_blank(),
+                               plot.margin = margin(r = 0.5, l = 0.5)), 
+                   c12 + theme(axis.text.y = element_blank(),
+                               axis.text.x = element_blank(),
+                               axis.title.y = element_blank(),
+                               panel.grid = element_blank(),
+                               plot.margin = margin(r = 0.5, l = 0.5)),
+                   d12 + theme(axis.text.y = element_blank(),
+                               axis.text.x = element_blank(),
+                               panel.grid = element_blank(),
+                               axis.title.y = element_blank(),
+                               plot.margin = margin( l = 0.5)),
+                   f12 + theme(axis.text.y = element_blank(),
+                               axis.text.x = element_blank(),
+                               panel.grid = element_blank(),
+                               plot.margin = margin(l = 0.5)),
+                   a15+theme(panel.grid = element_blank(),
+                             plot.margin = margin(l = 0.5)), 
+                   b15 + theme(axis.text.y = element_blank(),
+                               axis.title.y = element_blank(),
+                               panel.grid = element_blank(),
+                               plot.margin = margin(l = 0.5)), 
+                   c15 + theme(axis.text.y = element_blank(),
+                               panel.grid = element_blank(),
+                               plot.margin = margin(l = 0.5)),
+                   d15 + theme(axis.text.y = element_blank(),
+                               panel.grid = element_blank(),
+                               plot.margin = margin( l = 0.5)),
+                   f15 + theme(axis.text.y = element_blank(),
+                               panel.grid = element_blank(),
+                               plot.margin = margin( l = 0.5)),
+                   nrow = 4,ncol = 5)
+
+)
